@@ -1,0 +1,167 @@
+
+.headerMenuItem{
+    display: -webkit-inline-flex;
+    border: none;
+    background: transparent;
+    height: 45px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left:30px;
+    list-style: none;
+    margin: 0px;
+    color: #5e717d;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 19px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+    transition: all .3s linear;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+.headerMenuItem:hover{
+    color:#0197C1;
+}
+.menu a{
+    text-decoration: none;
+}
+#donateButton{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.logos{
+    width:100%;
+    height: 100px;
+    margin:0px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-bottom: #D8D9DA solid 2px;
+}
+.logos img{
+    position:relative;
+    height: initial;
+}
+.innerLogos{
+    width:700px;
+    margin:auto;
+}
+.interactLogo{
+    top:10px;
+    width:32%;
+    margin-right: 16%;
+}
+.fairmontLogo{
+    width: 35%;
+    margin-left: 16%;
+}
+
+.menu{
+    display:flex;
+    background: #F8F9FA;
+    height: 45px;
+    width:100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    margin: 0px;
+}
+
+
+.headerDiv{
+    width:100%;
+    height: 70px;
+    margin:0px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-bottom: #D8D9DA solid 2px;
+}
+.MobileHeader{
+    display: none;
+}
+.innerLogosMobile{
+    width: 500px;
+    height: 70px;
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    margin-right: 0px;
+}
+.headerDiv button{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: transparent;
+    border: none;
+}
+.popOut{
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    z-index: 97;
+    background: #ffffffe5;
+    opacity:0;
+    left: 100%;
+    transition: all 130ms ease-in-out;
+}
+.popOut ul{
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    list-style: none;
+}
+.popOut li{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.popOut button{
+    font-size: 26px;
+}
+.popOut a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1030px){
+    .innerLogos{
+        width: 600px;
+    }
+}
+
+
+
+@media screen and (max-width: 990px){
+    .DesktopHeader{
+        display: none;
+    }
+    .MobileHeader{
+        display: block;
+    }
+    .fairmontLogo{
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 650px){
+    .innerLogosMobile{
+        width: 400px;
+        margin-left: -200px;
+    }
+    .fairmontLogo{
+        width:44%;
+        margin-left:5%;
+        margin-bottom: 10px;
+    }
+    .interactLogo{
+        width:44%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .innerLogosMobile{
+        margin-left: -250px;
+    }
+}

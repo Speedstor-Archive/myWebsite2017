@@ -1,0 +1,271 @@
+/*body, html{
+    overflow-x:hidden;
+}*/
+
+img{
+    width:17%;
+    position: relative;
+    margin: -2px;
+    transition:all 100ms linear;
+}
+
+img:hover{
+    width: 20%;
+}
+
+.collage{
+    float:left;
+    margin-left: 8%;
+    padding-top: 120px;
+    width: 45%;
+    height: 640px;
+}
+
+
+.artBackground{
+    padding-top:70px;
+
+    position: relative;
+
+    height:900px;
+    background:url(../../src/background.jpg) ;
+    background-size: 140%;
+    background-position-y: -300px;
+    background-position-x: -100px;
+
+    z-index: 2;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 4vw),
+        0 100%
+      ); 
+
+      
+}
+
+.miaImg{
+
+}
+.eagleImg{
+    top:30px;
+}
+.flashImg{
+    width:19%;
+}
+.flashImg:hover{
+    width:23%;
+}
+.pandaImg{
+    top:18px;
+    margin-right: 200px;
+}
+.pigeonImg{
+    top:15px;
+    left:32px;
+}
+.pigeonImg:hover{
+    top:-10px;
+}
+.redDragonImg{
+    left:27px;
+    top:-21px;
+    z-index: 20;
+}
+.cartoonImg{
+    width:26%;
+    top:-23px;
+    left:15px;
+}
+.cartoonImg:hover{
+    width:30%;
+}
+.squishyImg{
+    left:-20px;
+}
+.squishyImg:hover{
+    top:-10px;
+}
+.popStarImg{
+    top: 70px;
+    left:-20px;
+}
+.popStarImg:hover{
+    top:60px;
+}   
+.oldManImg{
+    top:-20px;
+    left:35%;
+}
+.wolfImg{
+    left:35%;
+    top:1px;
+}
+
+
+/*Paragraph*/
+.artDescription{
+    width:35%;
+    position:absolute;
+    float:right;
+    right: 5%;
+    margin-left:58%;
+
+    color:rgb(228, 228, 228);
+
+    padding-top:230px;
+}
+.artHeading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    margin:0px;
+    font-size: 3em;
+}
+.artParagraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:72%;
+    position:relative;
+
+    font-size: 1.2em;   
+
+    padding-left:12px;
+}
+.artList{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    
+    margin-left: 5%;
+}
+
+
+
+
+@media screen and (max-width:1714px){
+    .pandaImg{
+        margin-right:120px;
+    }
+    .artDescription{
+        font-size: 15px;
+        padding-top: 180px;
+    }
+    .artHeading{
+        font-size: 30px;
+    }
+    .artBackground{
+        height: 700px;
+    }
+    .collage{
+        height: 550px;
+    }
+    .artList{
+
+    }
+    .artParagraph{
+
+    }
+}
+
+@media screen and (max-width:1300px){
+    .collage{
+        height: 400px;
+    }
+    .artBackground{
+        height: 630px;
+    }
+}
+
+
+
+@media screen and (max-width:1020px){
+    .artBackground{
+        height:900px;
+    }
+    .collage{
+        height: 600px;
+        float:none;
+        width: 80%;
+        padding-left: 10%; 
+        margin:auto;
+        box-sizing: border-box;
+    }
+    .pandaImg{
+       margin-right:100px;
+    }
+    .artDescription{
+        float:none;
+        position:relative;
+        right:0px;
+        margin:auto;
+        font-size:12px;
+        padding-top:80px;
+        width:80%;
+
+
+        border-top: 1px solid white;
+    }
+    .artHeading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .artParagraph{
+        text-align:center;
+        margin:auto;
+        margin-top: 20px;
+    }
+    .artListI{
+        width:200px;
+        margin:auto;
+        margin-top:15px;
+    }
+}
+
+
+
+@media screen and (max-width:800px){
+    .pandaImg{
+        width: 20%;
+        margin-right:300px;
+    }
+    .pandaImg:hover{
+        width: 22%;
+    }
+    .collage{
+        padding-top: 40px;
+        height:720px;
+        width:120%;
+        padding-left: 0px;
+        margin-left: -13px;
+    }
+    .artDescription{
+        padding-top:50px;
+    }
+    .artBackground{
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .collage{
+        padding-top: 10px;
+        height: 550px;
+    }
+    .pandaImg{
+        margin-right:120px;
+    }
+    .artParagraph{
+        width:90%;
+    }
+    .artDescription{
+        width:90%;
+    }
+    .artBackground{
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .collage{
+        height: 460px;
+    }
+}

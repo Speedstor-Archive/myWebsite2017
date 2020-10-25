@@ -1,0 +1,38 @@
+.mainDiv{
+    width:35%;
+    margin:auto;
+    height: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: #e2e0e0;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+html{
+    background: #919191;
+}
+
+.mainDiv input{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mainDiv form{
+    width: 100%;
+}
+
+.mainDiv button{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1{
+    text-align: center;
+}

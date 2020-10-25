@@ -1,0 +1,46 @@
+*{
+
+}
+
+.samples{
+	width: 70%;
+	height:auto;
+	margin:auto;
+	margin-top:80px;
+	margin-bottom:30px;
+}
+
+.sampleWorks{
+	width:1100px;
+	height:620px;
+	background:url("../../src/sampleWorks.png");
+	background-position: 50% 0;\
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin:auto;
+	margin-bottom:90px;
+}
+
+.samples h1{
+	    font-family: "Roboto",sans-serif;
+	    font-style:bold;
+	    font-size:3em;
+	    text-align:center;
+	    width:100%;
+	    margin-top:0px;
+}
+
+@media screen and (max-width:1440px){
+	.samples{
+		width:90%;
+	}
+	.sampleWorks{
+		width:800px;
+	}
+}
+
+@media screen and (max-width:850px){
+	.sampleWorks{
+		width:510px;
+	}
+}

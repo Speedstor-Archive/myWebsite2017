@@ -1,0 +1,186 @@
+
+
+.programCollage{
+    float:right;
+    margin-right: 2%;
+    padding-top: 120px;
+    width: 50%;
+    height: 640px;
+
+    align-content: center;
+}
+
+.programIcon{
+    width:auto;
+    float:left;
+    height: 80%;
+    margin:0px;
+}
+.programIcon:hover{
+    
+    width:auto;
+    height: 82%;
+}
+
+.programBackground{
+    position:relative;
+    padding-top: 100px;
+    height:900px;
+    background:url(../../src/background3.jpg);
+    background-size: 140%;
+    background-position-y: -300px;
+    background-position-x: -100px;
+    margin-top:-100px;
+    z-index: 0;
+}
+
+/*Paragraph*/
+.programDescription{
+    width:35%;
+    position: absolute;
+    float:left;
+    left: 5%;
+    margin-left:5%;
+
+    color:rgb(228, 228, 228);
+
+    padding-top:230px;
+}
+.programHeading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    margin:0px;
+    font-size: 3em;
+}
+.programParagraph{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:72%;
+    position:relative;
+
+    font-size: 1.2em;   
+
+    padding-left:12px;
+}
+.programList{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    
+    margin-left: 5%;
+}
+
+
+
+
+@media screen and (max-width:1714px){
+    .pandaImg{
+        margin-right:120px;
+    }
+    .programDescription{
+        font-size: 15px;
+        padding-top: 180px;
+    }
+    .programHeading{
+        font-size: 30px;
+    }
+    .programBackground{
+        height: 780px;
+    }
+    .programCollage{
+        height: 550px;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .programCollage{
+        height: 400px;
+    }
+    .programBackground{
+        height: 630px;
+    }
+}
+
+
+
+@media screen and (max-width:1020px){
+    .programBackground{
+        height:900px;
+    }
+    .programCollage{
+        height: 600px;
+        float:none;
+        position: static;
+        width: 80%;
+        
+        margin:auto;
+        box-sizing: border-box;
+    }
+    .pandaImg{
+       margin-right:100px;
+    }
+    .programDescription{
+        float:none;
+        position:relative;
+        left:0px;
+        margin:auto;
+        font-size:12px;
+        padding-top:80px;
+        width:80%;
+
+
+        border-top: 1px solid white;
+    }
+    .programHeading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .programParagraph{
+        text-align:center;
+        margin:auto;
+        margin-top: 20px;
+    }
+    .programListI{
+        width:200px;
+        margin:auto;
+        margin-top:15px;
+    }
+}
+
+
+
+@media screen and (max-width:800px){
+    .programCollage{
+        padding-top: 90px;
+        height:800px;
+        width:90%;
+    }
+    .programDescription{
+        padding-top:50px;
+    }
+    .programBackground{
+        height: 1100px;
+    }
+    .programIcon{
+        height: 77%;
+    }
+    .programIcon:hover{
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .programCollage{
+        height: 585px;
+    }
+    .pandaImg{
+        margin-right:100px;
+    }
+    .programParagraph{
+        width:90%;
+    }
+    .programDescription{
+        width:90%;
+    }
+    .programBackground{
+        height:860px;
+    }
+}

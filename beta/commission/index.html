@@ -1,0 +1,225 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fairmont Interact Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index/index.css">
+    
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/index.js"></script>
+</head>
+
+<div class="introBackgroundPic"></div>
+
+<header class="DesktopHeader">
+    <div class="logos">
+        <div class="innerLogos" id="innerLogos">
+            <img class="interactLogo" width="250px" src="src/Interact-Logo-left.png" alt="Interact Club Logo"/>
+            <img class="fairmontLogo" width="250px" src="src/Fairmont Logo.png" alt="Farimont Prep Logo"/>
+        </div>
+        <a href="https://my.rotary.org/en/donate"><button class="headerMenuItem" id="donateButton">Donate</button></a>
+    </div>
+    <div class="menu">
+        <a href="about.html"><button class="headerMenuItem">About</button></a>
+        <a href="events.html"><button class="headerMenuItem">Events</button></a>
+        <a href="blog.html"><button class="headerMenuItem">Blog</button></a>
+        <a href="members.html"><button class="headerMenuItem">Members</button></a>
+    </div>
+</header>
+<header class="MobileHeader">
+    <div class="headerDiv">
+        <div class="innerLogosMobile" id="innerLogos">
+            <img class="interactLogo" src="src/Interact-Logo-left.png" alt="Interact Club Logo"/>
+            <img class="fairmontLogo" src="src/Fairmont Logo.png" alt="Farimont Prep Logo"/>
+        </div>
+        <button onclick="popOut();"><img src="src/menu.png" style="width: 50px;"></button>
+    </div>
+    <div class="popOut" id="popOut">
+        <ul>
+            <li><a href="#"><button class="headerMenuItem">About</button></a></li>
+            <li><a href="events.html"><button class="headerMenuItem">Events</button></a></li>
+            <li><a href="blog.html"><button class="headerMenuItem">Blog</button></a></li>
+            <li><a href="members.html"><button class="headerMenuItem">Members</button></a></li>
+            <li><a href="https://my.rotary.org/en/donate"><button class="headerMenuItem">Donate</button></a></li>
+        </ul>
+    </div>
+</header>
+
+<body onload="setup();">
+    <div id="space">
+        <div class="intro">
+            <h1 id="toptexts2">Interact Club</h1>
+            <a href="#introduction"class="arrow bounce"><img src="src/scroll.png" alt="Page Skip Arrow"></a>
+        </div>
+        
+        <div id="introduction" class="introduction">
+            <div class="center one">
+                <h1>Introduction</h1>
+                <p>This is a sample paragraph illustrating the introduction for 
+                    the Club
+                    
+                    and what it is offering.
+                    For example, the events that it host, the 
+                    activities that they plan. The quality of the members and what do they
+                    do in meetings. What are some of the catagory of the normal days. What 
+                    are the goal of the club and what the club want to do. This paragraph 
+                    should be about 100 to 200 words to fit in to it. Although this paragraph 
+                    would not be read by other people, it is served for google to know what 
+                    this website is about.
+                </p>
+                <div class="stats">
+                    <div class="numberStats">
+                        <h1>5</h1>
+                        <h2>Events</h2>
+                    </div>
+                    <div class="numberStats">
+                        <h1>10</h1>
+                        <h2>Members</h2>
+                    </div>
+                    <div class="numberStats">
+                        <h1>10,000</h1>
+                        <h2>Raised</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="members">
+            <div class="center two">
+                <h1>MEMBER</h1>
+                <button id="left" class="left" onclick="memberButton(-1);"></button>
+                <button id="right" class="right" onclick="memberButton(1);"></button>
+                <div id="memberPictureDiv" class="memberPictureDiv">
+                    <img class="memberPicture pictureOne" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                    <img class="memberPicture" src="src/placeHolder.png">
+                </div>
+            </div>
+        </div>
+        
+        <div class="events">
+            <div class="center three">
+                <h1>Events</h1>
+                <div class="timeline" id="timeline">
+                    <div class="timelineTime" id="timelineTime"></div>
+                    <div class="eventOne timelineEvents" id="eventOne" onmouseover="onMouseOver(1);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="firstTime" class="timelineTimes firstTime ">May 2018</h6>
+                    </div>
+                    <div class="eventTwo timelineEvents" id="eventTwo" onmouseover="onMouseOver(2);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="secondTime" class="secondTime timelineTimes">April 2018</h6>
+                    </div>
+                    <div class="eventThree timelineEvents" id="eventThree" onmouseover="onMouseOver(3);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="thirdTime" class="thirdTime timelineTimes">Sep 2018</h6>
+                    </div>
+                    <div class="eventFour timelineEvents" id="eventFour" onmouseover="onMouseOver(4);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="fourthTime" class="fourthTime timelineTimes">Jan 2019</h6>
+                    </div>
+                    <div class="eventFive timelineEvents" id="eventFive" onmouseover="onMouseOver(5);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="fifthTime" class="fifthTime timelineTimes">Feb 2019</h6>
+                    </div>
+                    <div class="eventSix timelineEvents" id="eventSix" onmouseover="onMouseOver(6);" onmouseout="onMouseOut();">
+                        <img src="src/activity.jpg" class="activities ">
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                        <h6 id="sixthTime" class="sixthTime timelineTimes">May 2019</h6>
+                    </div>
+                </div>
+                <div class="timelineMobile">
+                    <div class="timelineEventsMobile oneMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>May 2018</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div class="timelineEventsMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>April 2018</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div class="timelineEventsMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>Sep 2018</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div class="timelineEventsMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>Jan 2019</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div class="timelineEventsMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>Feb 2019</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div class="timelineEventsMobile">
+                        <img src="src/activity.jpg" alt="Activity Picture">
+                        <h6>May 2019</h6>
+                        <p>One or two sentences regarding to the activity demonstrated and what it is all about.</p>
+                    </div>
+                    <div style="width:50px; height:10px;"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <footer>
+        <div class="footerImage">
+            <div class="footerContent">
+                <div class="footerLogo">
+                    <img class="interactLogoFooter" src="src/Interact-Logo-left.png" alt="Interact Club Logo"/>
+                    <img class="fairmontLogoFooter" src="src/Fairmont Logo.png" alt="Farimont Prep Logo"/>
+                </div>
+                <ul>
+                    <li><h2>fairmontInteract.net</h2></li>
+                    <li class="list"><a href="index.html">Home</a></li>
+                    <li class="list"><a href="events.html">Events</a></li>				
+                    <li class="list"><a href="blog.html">Blog</a></li>
+                    <li class="list"><a href="member.html">Member</a></li>
+                </ul>
+                <ul>
+                    <li><h2>Contact</h2></li>
+                    <li class="list">Phone: +1 657-252-0269</li>
+                    <li class="list">Email: <a href="mailto:aldrin.cheung@gmail.com">youremail@gmail.com</a></li>
+                    <li class="list lastList">
+                        <button class="social facebook"></button>
+                        <button class="social twitter"></button>
+                        <button class="social linkedin"></button>
+                        <button class="social instagram"></button>
+                        <button class="social googlePlus"></button>
+                        <button class="social youtube"></button>
+                    </li>
+                </ul>
+                <img src="src/wechatQrCode.jpg" class="qrcode"></img>
+            </div>
+    
+            <div class="copyright3">
+                <p class="copyright2">Copyright &copy; 2019 FairmontInteract. All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+</html>

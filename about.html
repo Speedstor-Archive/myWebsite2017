@@ -1,0 +1,130 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Speedstor - About</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+     <link rel="stylesheet" type="text/css" media="screen" href="css/about/about.css" />
+     <link rel="stylesheet" type="text/css" href="css/footer.css">
+     <script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="js/about/about.js"></script>
+     <script src="main.js"></script>
+</head>
+
+<body>
+	<header id="mainHeader">
+          <a href="tempGame/game.html"><h1>Speedstor</h1></a>
+          <nav id="navBar">
+               <a href="index.html"><button>Home</button></a>
+               <a href="services.html"><button>Services</button></a>
+               <a href="prices.html"><button>Prices</button></a>
+               <a href="about.html"><button>About</button></a>
+          
+               <a onclick="start()" class="signIn">Log In </a>
+          </nav>
+          <div id="menuButton" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+     
+               <div id="sideBar">
+                    <a href="#" class="getStartedMenu">Get Started</a>
+                    <li class="sideBarTop" onclick="toggleSidebar()">X</li>
+					
+                    <ul>
+                         <a href="index.html"><li class="sideMenu">Home</li></a>
+                         <a href="services.html"><li class="sideMenu">Services</li></a>
+                         <a href="prices.html"><li class="sideMenu">Prices</li></a>
+                         <a href="about.html"><li class="sideMenu">About</li></a>
+                         <a href="tempGame/game.html"><li class="sideMenu">Canvas</li></a>
+                         <a onclick="start()"><li class="sideMenu">Log In</li></a>
+                    </ul>
+			</div>
+        	</div>  
+     </header>
+
+     <div class="aboutMe">
+          <div class="visuals">
+               <h1>ABOUT ME</h1>
+               <img src="src/download.png" class="portrait"></div>
+          </div>
+          <div class="aboutP">
+               <p>I am a 15 year old kid that is obssessed with tech. I have gain
+                    skills in java, c++, illustrations and 3d animation. I love to 
+                    help people and I am offering free services as a high school
+                    freelance. Helping other people is my joy and if you have any 
+                    enquiry about anything, you could always tell me about it.
+                    And because of all the free time I have as a high school student,
+                    I am always free, so please don't fret to tell me about your 
+                    "next big thing".
+               </p>
+          </div>
+
+          <div class="contact">
+               <h1>Contact</h1>
+               <div class="contactLeft">
+                    <p class="contactParagraph">
+                         If you have any requests, questions for me, if you need any help
+                         on anything that I could be useful in, please contact me. I'm a high
+                         schooler, so I am always free.
+                    </p>
+                    <p class="followMe">
+                         You can also follow Me on Facebook or Twitter, or both, Whatever.
+                    </p>
+                    <button class="facebookAbout">facebook</button>
+                    <button class="twitterAbout">twitter</button>
+               </div>
+               <div class="contactRight">
+                    <form action="somthing.php" onsubmit="return validateForm()" name="contactForm">
+                         <input type="text" name="name" placeholder="YOUR NAME"><br>
+                         <input type="email" name="email" placeholder="YOUR EMAIL"><br>
+                         <textarea class="yourMessage" name="yourMessage" placeholder="YOUR MESSAGE"></textarea><br>
+                         <input type="submit" class="submit" value="SUBMIT">
+                    </form>
+               </div>
+          </div>
+     </div>
+
+</div>
+
+</body>
+
+
+<footer>
+	<div class="footerImage">
+		<div class="footerContent">
+			<h1> Speedstor </h1>
+			<ul>
+				<li><h2>speedstor.net</h2></li>
+				<li class="list"><a href="index.html">Home</a></li>
+				<li class="list"><a href="club.html">Club</a></li>				
+				<li class="list"><a href="services.html">Services</a></li>
+				<li class="list"><a href="prices.html">Prices</a></li>
+				<li class="list"><a href="about.html">About</a></li>
+                    <li class="list"><a href="tempGame/game.html">Canvas</a></li>
+			</ul>
+			<ul>
+				<li><h2>Contact</h2></li>
+				<li class="list">Phone: +1 657-252-0269</li>
+				<li class="list">Email: <a href="mailto:aldrin.cheung@gmail.com">aldrin.cheung@gmail.com</a></li>
+				<li class="list">
+					<button class="social facebook"></button>
+					<button class="social twitter"></button>
+					<button class="social linkedin"></button>
+					<button class="social instagram"></button>
+					<button class="social googlePlus"></button>
+					<button class="social youtube"></button>
+				</li>
+			</ul>
+			<img src="src/wechatQrCode.jpg" class="qrcode"></img>
+		</div>
+
+		<div class="copyright3">
+			<p class="copyright2">Copyright &copy; 2018 Speedstor. All Rights Reserved </p>
+		</div>
+	</div>
+</footer>
+</html>
